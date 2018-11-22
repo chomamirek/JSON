@@ -1,0 +1,16 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+  "adminUserName": { "value": "xxxxxx" },
+  "adminPassword": { "value": "xxxxx" },
+  "virtualMachines_myVM_name": {"value": "winpeer02x"},
+  "OS":{"value": "Windows"},
+  "diskSizeGB":{"value":"128"},
+  "storageAccountType": {"value": "Standard_LRS"},
+  "availabilitySetYorN": {"value": "No"}, //Only allows Yes or No | Capital letter have matters
+  "PublicIPYorN":{"value": "Yes"}, //Public IP "Yes" or "No" | Capital letter have matters
+  "AutoShutdownYorN":{"value": "Yes"}, //Public IP "Yes" or "No" | Capital letter have matters
+  "numberOfInstances": {"value": 1}
+  }
+}
